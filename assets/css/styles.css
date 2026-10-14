@@ -142,6 +142,8 @@ figure{margin:0}
 figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem}
 .value-card{padding:1.2rem;border-top:4px solid var(--green);background:#fff;border-radius:var(--r);box-shadow:var(--shadow-sm)}
 .value-card h3{margin-bottom:.3rem}
+.card-body1{padding:1.2rem;display:flex;flex-direction:column;gap:55rem;flex:1}
+.card-body1 h3,.card-body1 p{margin:0}
 
 
 /* Stats */
