@@ -10,8 +10,8 @@ window.SITE_CONFIG = {
   // WhatsApp number: international format, DIGITS ONLY (no +, spaces or hyphens).
   // Example format: 919876543210  (country code 91 + 10-digit number)
   // Until a real number is entered, the donate button shows a "not configured" message.
-  whatsappNumber: '8917229243',
-  whatsappDisplay: '8917229243',            // e.g. '+91 98765 43210' (shown in footer/contact)
+  whatsappNumber: '+918917229243',
+  whatsappDisplay: '+918917229243',            // e.g. '+91 98765 43210' (shown in footer/contact)
 
   whatsappMessage:
     'Namaste Odisha Cancer Care. I would like to make a donation. ' +
@@ -22,8 +22,8 @@ window.SITE_CONFIG = {
   phoneDisplay: '+91 891 722 9243',               // e.g. '+91 674 000 0000'
   phoneTel: '918917229243',                   // e.g. '+916740000000'
   email: 'odishacancercare.trust@gmail.com',                      // e.g. 'info@yourdomain.org'
-  address: 'Utkal Hospital,Chandrasekharpur',
-  registration: '',               // only when verified, e.g. registration / charity details
+  address: 'Flat no-112/3rd floor, Nirmala Enclave, KALINGANAGAR, BHUBANESWAR(M.C) PO- DUMUDUMA, DIST - KHORDHA, ODISHA PIN - 751019, ',
+registration: '',               // only when verified, e.g. registration / charity details
   social: { facebook: '', instagram: '', youtube: '' }   // full https:// URLs
 };
 
