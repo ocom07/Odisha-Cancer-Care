@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
   // WhatsApp number: international format, DIGITS ONLY (no +, spaces or hyphens).
   // Example format: 919876543210  (country code 91 + 10-digit number)
   // Until a real number is entered, the donate button shows a "not configured" message.
-  whatsappNumber: '+918917229243',
+  whatsappNumber: '918917229243',
   whatsappDisplay: '+918917229243',            // e.g. '+91 98765 43210' (shown in footer/contact)
 
   whatsappMessage:
