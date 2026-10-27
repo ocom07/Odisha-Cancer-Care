@@ -226,3 +226,5 @@ th{background:var(--ivory);color:var(--navy)}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+.stng{font-size: medium; font-weight: 300;}
