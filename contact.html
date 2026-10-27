@@ -51,8 +51,8 @@
 <div class="split" style="margin-top:3rem;align-items:start">
 <div>
 <h2>Send a message</h2>
-<div class="notice"><p><strong>Frontend demonstration.</strong> This form checks your entries but cannot send them until a real form-submission service is configured. If an official email is configured, you can open your email app with the message prepared.</p></div>
-<form id="contact-form" novalidate>
+<!-- <div class="notice"><p><strong>Frontend demonstration.</strong> This form checks your entries but cannot send them until a real form-submission service is configured. If an official email is configured, you can open your email app with the message prepared.</p></div>
+ --><form id="contact-form" novalidate>
 <div class="field"><label for="cf-name">Your name</label><input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-err"><p class="field-error" id="cf-name-err" hidden></p></div>
 <div class="field"><label for="cf-email">Your email</label><input id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-err"><p class="field-error" id="cf-email-err" hidden></p></div>
 <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="5" required aria-describedby="cf-message-err"></textarea><p class="field-error" id="cf-message-err" hidden></p></div>
@@ -63,7 +63,18 @@
 </div>
 <div id="get-help">
 <h2>Get Help</h2>
-<p>If you or your family need support, contact us by phone, email or WhatsApp. Describe your situation briefly and we will explain what help may be available. <span class="ph">[Describe the verified eligibility and intake process.]</span></p>
+<p>If you or your family need support, contact us by phone, email or WhatsApp. Describe your situation briefly and we will explain what help may be available. 
+  <p><strong>To help us understand your needs, our team will guide you through a quick verification process:</strong></p>
+<section>
+<p><strong>Initial Assessment:</strong> Share basic details about the patient, including current medical condition and location.</p>
+
+<p><strong>Document Submission:</strong> Provide relevant medical records (such as doctor diagnosis or prescription) and proof of identity/income.</p>
+
+<p><strong>Verification:</strong> Our medical and support panel will review the documents within 24–48 hours to confirm program eligibility.</p>
+
+<p><strong>Assistance Plan:</strong> Once verified, our team will reach out directly to outline the financial, medical, or counseling support available to you.</span></p>
+
+</section>
 <p>This website cannot provide medical advice. In a medical emergency, contact your doctor or the nearest hospital.</p>
 <a class="btn btn-accent" href="donate.html">Donate Now</a>
 </div>

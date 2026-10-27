@@ -245,8 +245,40 @@
         var first = $('[aria-invalid="true"]', form); if (first) first.focus();
         return;
       }
-      var msg = '<div class="notice notice--info"><p><strong>Nothing has been sent.</strong> This form is a frontend demonstration: no form-submission service is configured yet.</p>';
-      if (cfg.email) {
+/*       var msg = '<div class="notice notice--info"><p><strong>Nothing has been sent.</strong> This form is a frontend demonstration: no form-submission service is configured yet.</p>';
+ */      
+if (!cfg.email) {
+  status.innerHTML =
+    '<div class="notice notice--error"><p>No official email address is configured.</p></div>';
+  return;
+}
+
+var recipient = cfg.email;
+var subject = 'Contact Us Message - Odisha Cancer Care';
+
+var body =
+  'Hello Odisha Cancer Care,\n\n' +
+  t.value.trim() +
+  '\n\nRegards,\n' +
+  n.value.trim() +
+  '\nEmail: ' +
+  m.value.trim();
+
+var gmailUrl =
+  'https://mail.google.com/mail/?view=cm&fs=1' +
+  '&to=' + encodeURIComponent(recipient) +
+  '&su=' + encodeURIComponent(subject) +
+  '&body=' + encodeURIComponent(body);
+
+status.innerHTML =
+  '<div class="notice notice--info"><p>' +
+  '<strong>Your message is ready.</strong> ' +
+  'Gmail will open with your message prepared. Review it and click Send.' +
+  '</p></div>';
+
+window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+
+      /* if (cfg.email) {
         var body = 'Name: ' + n.value.trim() + '\nEmail: ' + m.value.trim() + '\n\n' + t.value.trim();
         msg += '<p><a class="btn btn-primary" href="mailto:' + encodeURIComponent(cfg.email).replace('%40', '@') +
           '?subject=' + encodeURIComponent('Message from website') + '&body=' + encodeURIComponent(body) +
@@ -254,7 +286,7 @@
       } else {
         msg += '<p>No official email address is configured yet, so there is nowhere to send this message.</p>';
       }
-      status.innerHTML = msg + '</div>';
+      status.innerHTML = msg + '</div>'; */
     });
   }
 
