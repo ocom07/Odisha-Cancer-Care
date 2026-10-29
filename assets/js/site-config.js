@@ -22,7 +22,7 @@ window.SITE_CONFIG = {
   phoneDisplay: '+91 891 722 9243',               // e.g. '+91 674 000 0000'
   phoneTel: '918917229243',                   // e.g. '+916740000000'
   email: 'odishacancercare.trust@gmail.com',                      // e.g. 'info@yourdomain.org'
-  address: 'Flat no-112/3rd floor, Nirmala Enclave, KALINGANAGAR, BHUBANESWAR(M.C) PO- DUMUDUMA, DIST - KHORDHA, ODISHA PIN - 751019, ',
+  address: 'Flat no-112/3rd floor, Nirmala Enclave, KALINGANAGAR, BHUBANESWAR(M.C) PO- DUMUDUMA, DIST - KHORDHA, ODISHA PIN - 751019 ',
 registration: '',               // only when verified, e.g. registration / charity details
   social: { facebook: '', instagram: '', youtube: '' }   // full https:// URLs
 };
